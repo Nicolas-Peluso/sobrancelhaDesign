@@ -21,8 +21,8 @@
     margin: 10px 0px;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     border: 10px solid #FF4AA1;
+    border-radius: 50%;
 }
 
 .description{
@@ -59,7 +59,8 @@
 
 .containerItensServices li img{
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 20px;
 }
 
 @media (max-width: 950px) {
