@@ -28,7 +28,7 @@ header{
     height: 200px;
     border: 10px solid #FF4AA1;
     border-radius: 50%;
-    animation: entrando 1s;
+    animation: entrando 1.3s ease-in;
 }
 
 .description{
@@ -64,7 +64,7 @@ header{
 }
 
 .containerItensServices li img{
-    animation: entrando 1.5s;
+    animation: entrando 1.3s ease-in;
     width: 100%;
     height: auto;
     border-radius: 20px;
@@ -78,19 +78,9 @@ header{
 
 }
 
-.footer{
-    width: 100%;
-    box-shadow: 1px 0px 0px 0px black;
-    height: 100%;
-}
-
 @media (max-width: 950px) {
     .containerDefault{
-        width: 80%;
-    }
-    .containerItensServices li.sectionInfo img{
-        height: 400px;
-        width: 110%;
+        width: 90%;
     }
     .description h1{
     font-size: 2rem;
@@ -103,6 +93,13 @@ header{
         margin: 0px 0px 10px auto;
     }
 
+}
+
+@media (max-width: 350px){
+    .containerItensServices li.sectionInfo img{
+        height: 300px;
+        width: 100%;
+    }
 }
 
 @keyframes entrando {
