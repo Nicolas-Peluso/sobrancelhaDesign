@@ -7,14 +7,19 @@
     list-style-type: none;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .containerDefault{
     height: 100%;
     width: 50%;
     margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .imageContainer img{
@@ -23,6 +28,7 @@
     height: 200px;
     border: 10px solid #FF4AA1;
     border-radius: 50%;
+    animation: entrando 1s;
 }
 
 .description{
@@ -30,7 +36,7 @@
     text-align: center;
 }
 
-.description h1{
+.wellSection{
     padding: 15px;
     font-size: 3.4rem;
     color: #FF4AA1;
@@ -54,17 +60,58 @@
 }
 
 .containerItensServices li{
-    margin: 10px;
+    margin: 0px 0px 60px auto;
 }
 
 .containerItensServices li img{
+    animation: entrando 1.5s;
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
 
+.second{
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.footer{
+    width: 100%;
+    box-shadow: 1px 0px 0px 0px black;
+    height: 100%;
+}
+
 @media (max-width: 950px) {
     .containerDefault{
         width: 80%;
+    }
+    .containerItensServices li.sectionInfo img{
+        height: 400px;
+        width: 110%;
+    }
+    .description h1{
+    font-size: 2rem;
+    letter-spacing: 5px;
+    }
+    .second{
+        font-size: 2rem
+    }
+    .containerItensServices li{
+        margin: 0px 0px 10px auto;
+    }
+
+}
+
+@keyframes entrando {
+    0%{
+        transform: translateX(-60px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
