@@ -55,9 +55,6 @@ header{
     margin-top: 40px;
 }
 
-.containerItensServices{
-    height: 150px;
-}
 
 .containerItensServices li{
     margin: 0px 0px 60px auto;
@@ -68,6 +65,37 @@ header{
     width: 100%;
     height: auto;
     border-radius: 20px;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.images-slide{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.images-slide li{
+    position: absolute;
+    opacity: 0;
+    margin-top: 40px;
+}
+
+.images-slide li img{
+    border-radius: 5%;
+    width: 100%;
+    height: 700px;
+}
+
+.active{
+    opacity: 1!important;
 }
 
 .second{
@@ -92,11 +120,19 @@ header{
     .containerItensServices li{
         margin: 0px 0px 10px auto;
     }
+    .slide ul li img{
+        height: 500px;
+        width: 100%;
+    }
 
 }
 
 @media (max-width: 350px){
     .containerItensServices li.sectionInfo img{
+        height: 300px;
+        width: 100%;
+    }
+    .slide ul li img{
         height: 300px;
         width: 100%;
     }
